@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .requirements {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .steps {
+            margin: 20px 0;
+        }
+        .step {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .code {
+            background-color: #f1f1f1;
+            padding: 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Banking Application</h1>
+        
+        <div class="requirements">
+            <h2>Requirements</h2>
+            <ul>
+                <li>Java JDK 8 or higher</li>
+                <li>MySQL Server 8.0 or higher</li>
+                <li>MySQL Connector/J</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Installation Steps</h2>
+            <div class="step">
+                <h3>1. Clone the Repository</h3>
+                <p class="code">git clone [your-repository-url]</p>
+            </div>
+            <div class="step">
+                <h3>2. Set Up Database</h3>
+                <p>Run the database setup script:</p>
+                <p class="code">mysql -u root -p < dbms_setup.sql</p>
+            </div>
+            <div class="step">
+                <h3>3. Compile and Run</h3>
+                <p>Use the build script:</p>
+                <p class="code">build.bat</p>
+                <p>Or compile manually:</p>
+                <p class="code">javac -cp mysql-connector-java-8.0.33.jar BankingAppGUI.java</p>
+                <p class="code">java -cp .;mysql-connector-java-8.0.33.jar BankingAppGUI</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="https://github.com/[your-username]/[your-repo]/archive/refs/heads/main.zip" class="button">Download Application</a>
+            <a href="README.md" class="button">View Documentation</a>
+            <a href="INSTALL.md" class="button">Detailed Installation Guide</a>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <p>For any issues or questions, please refer to the documentation or create an issue on GitHub.</p>
+        </div>
+    </div>
+</body>
+</html> 
