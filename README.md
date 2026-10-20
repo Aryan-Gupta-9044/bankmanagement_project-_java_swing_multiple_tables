@@ -143,7 +143,3 @@ VALUES ('Savings', 1, 'BR001', 'encrypted_pin_here');
 - Account ownership verification
 - Transaction logging
 - Secure admin authentication
-
-## Contributing
-
-Feel free to submit issues and enhancement requests. 
